@@ -7,7 +7,7 @@ base64BytesUserMessage = base64.b64encode(bytesUserMessage)
 base64UserMessage = base64BytesUserMessage.decode('ascii')
 
 #decoding user message
-
+aaaaaaaaaaaaaaaaaaaaa
 
 
 keyValue = input ("Enter the key value to encode and decode the message")
