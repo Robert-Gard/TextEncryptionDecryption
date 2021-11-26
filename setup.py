@@ -1,10 +1,10 @@
 from setuptools import setup
 setup(
-    name = 'TextEncyptionDecrytion',
+    name = 'TextEncyptionDecryption',
     version = '0.1.0',
-    packages = ['TextEncyptionDecrytion'],
+    packages = ['TextEncyptionDecryption'],
     entry_points = {
         'console_scripts': [
-            'TextEncyptionDecrytion = TextEncyptionDecrytion.__main__:main'
+            'TextEncyptionDecryption = TextEncyptionDecryption.__main__:main'
         ]
     })
