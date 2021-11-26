@@ -26,7 +26,7 @@ while True:
     input ("That was not a valid key word, press enter to try again.  ")
     
 
-time.sleep(2)
+time.sleep(1)
 savedValue = open ('savedValue.txt', 'w')
 savedValue.write(keyValue)
 savedValue.close()
