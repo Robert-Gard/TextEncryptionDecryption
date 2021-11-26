@@ -53,9 +53,6 @@ if "ascii" in keyValue.lower():
         userMessage = bytesUserMessage.decode('ascii')
         print(userMessage)
         
-savedMessage = open ('savedMessage.txt', 'w')
-savedMessage.write(userMessage)
-savedMessage.close()
 
 if "UTF-8" in keyValue.upper():
         message = open("savedBase64Value.txt", "r")
@@ -64,4 +61,9 @@ if "UTF-8" in keyValue.upper():
         bytesUserMessage = base64.b64decode(base64BytesUserMessage)
         userMessage = bytesUserMessage.decode('UTF-8')
         print(userMessage)
+
+savedMessage = open ('savedMessage.txt', 'w')
+savedMessage.write(userMessage)
+savedMessage.close()
+
         
