@@ -10,7 +10,7 @@ savedMessage.close()
 
 while True:
     keyValue = input ("Enter the key value to encode and decode the message (ascii,UTF-8)  ")
-    if "ascii" in keyValue:
+    if "ascii" in keyValue.lower():
         bytesUserMessage = userMessage.encode('ascii')
         base64BytesUserMessage = base64.b64encode(bytesUserMessage)
         base64UserMessage = base64BytesUserMessage.decode('ascii')
@@ -45,7 +45,7 @@ print(".  ", end = '')
 time.sleep(1)
 
 
-if "ascii" in keyValue:
+if "ascii" in keyValue.lower():
         message = open("savedBase64Value.txt", "r")
         base64BytesUserMessage = message.read
         base64BytesUserMessage = base64UserMessage.encode('ascii')
